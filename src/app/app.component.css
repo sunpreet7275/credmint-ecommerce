@@ -1,0 +1,260 @@
+/* ==================== */
+/* Dropdown Custom Styles */
+/* ==================== */
+
+.dropdown-container-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Adjust e
+
+.dropdown-large-item-default-1-enabled.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu-custom {
+  position: absolute !important;
+  top: 48px !important;
+  left: 691px !important;
+  width: 196px !important;
+  background: var(--gray-1, #f5f5f5);
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid var(--gray-2, #d6d6d6);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item-custom {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid var(--gray-2, #d6d6d6);
+}
+
+.dropdown-item-custom:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item-custom:hover {
+  background-color: var(--white, #ffffff);
+}
+
+.dropdown-item-custom.selected {
+  background-color: #e8f2ff;
+  color: var(--green-5, #68d237);
+}
+
+.dropdown-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown-category-name {
+  font-family: var(--paragraph-regular-font-family, "WorkSans-Regular", sans-serif);
+  font-size: var(--paragraph-regular-font-size, 14px);
+  color: var(--gray-5, #555555);
+  font-weight: 500;
+}
+
+.dropdown-category-count {
+  font-family: var(--caption-small-regular-font-family, "WorkSans-Regular", sans-serif);
+  font-size: var(--caption-small-regular-font-size, 12px);
+  color: var(--gray-4, #858585);
+}
+
+.selected-category-count {
+  font-family: var(--caption-small-regular-font-family, "WorkSans-Regular", sans-serif);
+  font-size: var(--caption-small-regular-font-size, 12px);
+  color: var(--gray-5, #555555);
+  margin-left: 4px;
+}
+
+/* Arrow rotation animation */
+.arrow-down3 {
+  transition: transform 0.3s ease;
+}
+
+/* Scrollbar styling for dropdown */
+.dropdown-menu-custom::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-menu-custom::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.dropdown-menu-custom::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.dropdown-menu-custom::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Fix for search-fillter container */
+.search-fillter {
+  width: 580px !important;
+  height: 48px !important;
+  position: static !important;
+  display: inline-block !important;
+}
+
+/* Ensure dropdown doesn't break other elements */
+.header-nav-1 .content7 {
+  position: relative;
+  z-index: 100;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .dropdown-large-item-default-1-enabled {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    margin-top: 8px;
+  }
+  
+  .dropdown-menu-custom {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+  }
+}
+
+
+.real-estate2,
+.watch2,
+.glasses,
+.cosmetic2,
+.food-high-grade,
+.technology2 {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Selected category styling */
+.real-estate2.selected-category,
+.watch2.selected-category,
+.glasses.selected-category,
+.cosmetic2.selected-category,
+.food-high-grade.selected-category,
+.technology2.selected-category {
+  border-color: var(--green-5, #68d237) !important;
+  border-width: 2px !important;
+  box-shadow: 0 0 0 2px rgba(104, 210, 55, 0.2);
+  background-color: rgba(104, 210, 55, 0.05);
+}
+
+/* Hover effects for category cards */
+.real-estate2:hover,
+.watch2:hover,
+.glasses:hover,
+.cosmetic2:hover,
+.food-high-grade:hover,
+.technology2:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: var(--green-5, #68d237) !important;
+}
+
+/* Special styling for technology card (has different structure) */
+/* .technology2.selected-category {
+  position: relative;
+} */
+
+/* .technology2.selected-category::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid var(--green-5, #68d237);
+  border-radius: 8px;
+  pointer-events: none;
+} */
+
+/* Category name text color when selected */
+.real-estate2.selected-category .real-estate4,
+.watch2.selected-category .watch4,
+.glasses.selected-category .glasses3,
+.cosmetic2.selected-category .cosmetic4,
+.food-high-grade.selected-category .food-high-grade2,
+.technology2.selected-category .technology4 {
+  color: var(--green-5, #68d237) !important;
+  font-weight: 600;
+}
+
+/* Animation for selection */
+@keyframes category-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(104, 210, 55, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(104, 210, 55, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(104, 210, 55, 0);
+  }
+}
+
+.real-estate2.selected-category,
+.watch2.selected-category,
+.glasses.selected-category,
+.cosmetic2.selected-category,
+.food-high-grade.selected-category,
+.technology2.selected-category {
+  animation: category-pulse 0.6s ease;
+}
+
+/* Active state (when clicking) */
+.real-estate2:active,
+.watch2:active,
+.glasses:active,
+.cosmetic2:active,
+.food-high-grade:active,
+.technology2:active {
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .real-estate2:hover,
+  .watch2:hover,
+  .glasses:hover,
+  .cosmetic2:hover,
+  .food-high-grade:hover,
+  .technology2:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* ==================== */
+/* Sync Dropdown with Cards */
+/* ==================== */
+
+/* Highlight dropdown when category is selected from cards */
+.dropdown-large-item-default-1-enabled.category-selected {
+  background-color: rgba(104, 210, 55, 0.1);
+  border-color: var(--green-5, #68d237);
+}
+
+.dropdown-large-item-default-1-enabled.category-selected .category {
+  color: var(--green-5, #68d237);
+  font-weight: 500;
+}
+
+
+
+

@@ -1,0 +1,122 @@
+a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+
+   /* Global reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'WorkSans', sans-serif;
+  background: #ffffff;
+}
+
+/* Utility classes */
+.text-green {
+  color: #68d237;
+}
+
+.text-gray {
+  color: #858585;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+/* Button styles */
+.btn-medium-primary-default {
+  background: var(--green-5, #68d237);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-family: 'WorkSans-Medium', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.btn-medium-primary-default:hover {
+  background: #479622;
+}
+
+/* Badge styles */
+.badge-product-status-new {
+  background: var(--green-5, #68d237);
+  border-radius: 4px;
+  padding: 3px 12px;
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.badge-product-status-discount {
+  background: var(--red-5, #ff8154);
+  border-radius: 4px;
+  padding: 3px 12px;
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+/* Product card responsive */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

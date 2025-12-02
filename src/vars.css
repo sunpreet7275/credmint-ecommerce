@@ -1,0 +1,22 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --brand: #0e0e0e;
+  --button: #e45301;
+  --grey-1: #0e0e0e;
+  --grey-2: #989898;
+  --grey-3: #d8d8d8;
+  --grey-4: #f1f1f3;
+  --white: #ffffff;
+
+  /* Fonts */
+  /* Effects */
+}
+/* Figma Color Variables of your File */
+[data-variable-collection-mode="mode-1"] {
+  /* mode-1 */
+  --brand: #0e0e0e;
+  --button: #e45301;
+  --brand: #ffd05a;
+  --gray1: #360d0b;
+}
